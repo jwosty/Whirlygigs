@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "Whirlygigs", "Whirlygigs\Whirlygigs.fsproj", "{1D24F9D2-5BBC-42CF-BC1A-68F1C8E27481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		AppStore|x86 = AppStore|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D24F9D2-5BBC-42CF-BC1A-68F1C8E27481}.AppStore|x86.ActiveCfg = AppStore|x86
+		{1D24F9D2-5BBC-42CF-BC1A-68F1C8E27481}.AppStore|x86.Build.0 = AppStore|x86
+		{1D24F9D2-5BBC-42CF-BC1A-68F1C8E27481}.Debug|x86.ActiveCfg = Debug|x86
+		{1D24F9D2-5BBC-42CF-BC1A-68F1C8E27481}.Debug|x86.Build.0 = Debug|x86
+		{1D24F9D2-5BBC-42CF-BC1A-68F1C8E27481}.Release|x86.ActiveCfg = Release|x86
+		{1D24F9D2-5BBC-42CF-BC1A-68F1C8E27481}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Whirlygigs\Whirlygigs.fsproj
+	EndGlobalSection
+EndGlobal
