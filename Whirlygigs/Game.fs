@@ -4,26 +4,24 @@ open Microsoft.Xna.Framework
 open Microsoft.Xna.Framework.Graphics
 
     /// Default Project Template
-    type WhirlygigsGame() =
+    type WhirlygigsGame() as this =
         inherit Game()
-        let graphics = new GraphicsDeviceManager(x)
+        let graphics = new GraphicsDeviceManager(this)
         let mutable spriteBatch = Unchecked.defaultof<_>
         let mutable logoTexture = Unchecked.defaultof<_>
-     
+        
         /// Overridden from the base Game.Initialize. Once the GraphicsDevice is setup,
         /// we'll use the viewport to initialize some values.
-        override x.Initialize() =
+        override this.Initialize() =
           this.Content.RootDirectory <- "Content"
           graphics.IsFullScreen <- false
           base.Initialize()
 
         /// Load your graphics content.
-        override x.LoadContent() =
+        override this.LoadContent() =
             // Create a new SpriteBatch, which can be use to draw textures.
             spriteBatch <- new SpriteBatch (graphics.GraphicsDevice)
-            
-            // TODO: use this.Content to load your game content here eg.
-            logoTexture <- x.Content.Load<_>("logo")
+            logoTexture <- this.Content.Load ("logo")
 
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
