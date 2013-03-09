@@ -82,9 +82,9 @@
   <ItemGroup>
     <None Include="Info.plist" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\logo.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />
+  <ItemGroup>
+    <Content Include="Content\whirlies.png" />
+  </ItemGroup>
 </Project>
